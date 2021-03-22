@@ -6,7 +6,7 @@ def printStud(**kwargs):
     if 'id' in kwargs:
         details_list=[]
         idw=kwargs['id']
-        f=open('C:/Users/Binoy John k/Desktop/exam/student_list.txt','r')
+        f=open('student_list.txt','r')
         for lines in f:
             words=lines.rstrip("\n").split(" ")
             if int(words[3])>max_marks:
@@ -25,6 +25,6 @@ def printStud(**kwargs):
         print("No student ID")
 
             
-printStud(id=100)
+printStud(id=100,property='total')
 
 
